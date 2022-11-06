@@ -23,7 +23,7 @@ src_configure() {
 	rm -rf ./build || die
 	mkdir -p build || die
 	cd build || die
-	cmake .. -DCMAKE_SKIP_RPATH=ON || die
+	cmake .. -DCMAKE_SKIP_RPATH=ON -DBUILD_SHARED_LIBS=OFF || die
 }
 
 src_compile() {
@@ -35,5 +35,6 @@ src_install() {
 	dobin ./build/bin/btorsim
 	dobin ./build/bin/btorsplit
 	dobin ./build/bin/catbtor
-	dolib.so ./build/lib/libbtor2parser.so
+	doheader ./src/btor2parser/btor2parser.h
+	dolib.a ./build/lib/libbtor2parser.a
 }
