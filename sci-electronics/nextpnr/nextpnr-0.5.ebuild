@@ -8,7 +8,7 @@ inherit python-any-r1
 
 DESCRIPTION="Portable FPGA place and route tool"
 HOMEPAGE="https://github.com/YosysHQ/nextpnr"
-SRC_URI="https://github.com/YosysHQ/nextpnr/archive/refs/tags/nextpnr-0.4.tar.gz"
+SRC_URI="https://github.com/YosysHQ/nextpnr/archive/refs/tags/nextpnr-0.5.tar.gz"
 
 S="${WORKDIR}/${PN}-${P}"
 
@@ -28,7 +28,7 @@ BDEPEND="
 
 src_configure() {
 	cmake \
-		-DCURRENT_GIT_VERSION=nextpnr-0.4 \
+		-DCURRENT_GIT_VERSION=nextpnr-0.5 \
 		-DCMAKE_INSTALL_PREFIX="${EPREFIX}/usr" \
 		-DARCH="ice40;ecp5" \
 		-DICESTORM_INSTALL_PREFIX="${EPREFIX}/usr" \
