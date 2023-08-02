@@ -1,4 +1,4 @@
-# Copyright 2022 Leo Cassarani
+# Copyright 2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -7,9 +7,9 @@ inherit autotools
 
 DESCRIPTION="Verilator open-source SystemVerilog simulator and lint system"
 HOMEPAGE="https://www.veripool.org/verilator/"
-SRC_URI="https://github.com/verilator/verilator/archive/refs/tags/v4.228.tar.gz"
+SRC_URI="https://github.com/verilator/verilator/archive/refs/tags/v4.224.tar.gz"
 
-LICENSE="LGPL"
+LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="amd64"
 
