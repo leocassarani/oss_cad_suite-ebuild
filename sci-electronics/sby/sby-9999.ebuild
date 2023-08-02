@@ -15,8 +15,8 @@ LICENSE="ISC"
 SLOT="0"
 KEYWORDS="amd64"
 
-DEPEND=""
-RDEPEND="${DEPEND}"
+RDEPEND="dev-python/click"
+DEPEND="${RDEPEND}"
 BDEPEND=""
 
 src_compile() {
