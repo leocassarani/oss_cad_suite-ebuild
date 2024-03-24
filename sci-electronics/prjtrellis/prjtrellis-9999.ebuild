@@ -20,7 +20,7 @@ KEYWORDS="amd64"
 RDEPEND="dev-libs/boost"
 DEPEND="${RDEPEND}"
 BDEPEND="
-	dev-util/cmake
+	dev-build/cmake
 	dev-vcs/git"
 
 src_configure() {

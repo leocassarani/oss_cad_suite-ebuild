@@ -19,7 +19,7 @@ DEPEND="
 	sci-mathematics/btor2tools
 	sci-mathematics/lingeling"
 RDEPEND="${DEPEND}"
-BDEPEND=">=dev-util/cmake-3.3"
+BDEPEND=">=dev-build/cmake-3.3"
 
 HEADERS="
 	boolector.h

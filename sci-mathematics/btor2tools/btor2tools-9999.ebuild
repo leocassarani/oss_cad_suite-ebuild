@@ -17,7 +17,7 @@ KEYWORDS="amd64"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
-BDEPEND="dev-util/cmake"
+BDEPEND="dev-build/cmake"
 
 src_configure() {
 	rm -rf ./build || die

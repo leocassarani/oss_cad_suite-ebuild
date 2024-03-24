@@ -19,7 +19,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 BDEPEND="
 	=dev-cpp/gtest-1.11.0
-	>=dev-util/cmake-3.3 "
+	>=dev-build/cmake-3.3 "
 
 src_configure() {
 	sed -i 's/1.10.0/1.11.0/g' cmake/FindGoogleTest.cmake
