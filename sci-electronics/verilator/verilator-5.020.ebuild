@@ -18,7 +18,7 @@ DEPEND="
 	sys-libs/zlib"
 RDEPEND="${DEPEND}"
 BDEPEND="
-	sys-devel/autoconf
+	dev-build/autoconf
 	sys-devel/bison
 	sys-devel/flex"
 
